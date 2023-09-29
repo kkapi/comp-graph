@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>lab1</title>
+		<link rel="stylesheet" href="./styles.css" />
+		<link rel="icon" href="./cube.png" />
+	</head>
+	<body>
+		<div class="metrics">
+			<div class="angles">
+				<div>Поворот по X: <span class="x_angle">0°</span></div>
+				<div>Поворот по Y: <span class="y_angle">0°</span></div>
+				<div>Поворот по Z: <span class="z_angle">0°</span></div>
+			</div>
+			<div class="coordinates">
+				<div>Координаты вершин</div>
+			</div>
+		</div>
+		<canvas height="500" width="500" id="canvas">Обновите браузер</canvas>
+		<div class="sliders">
+			<div class="rotation">
+				<div>
+					<label for="rotation_X">Вращение по X</label>
+					<input
+						type="range"
+						id="rotation_X"
+						min="-90"
+						max="90"
+						step="1"
+					/>
+				</div>
+				<div>
+					<label for="rotation_Y">Вращение по Y</label>
+					<input
+						type="range"
+						id="rotation_Y"
+						min="-90"
+						max="90"
+						step="1"
+					/>
+				</div>
+				<div>
+					<label for="rotation_Z">Вращение по Z</label>
+					<input
+						type="range"
+						id="rotation_Z"
+						min="-90"
+						max="90"
+						step="1"
+					/>
+				</div>
+			</div>
+			<div class="movement">
+				<div>
+					<label for="movement_X">Перемещение по X</label>
+					<input
+						type="range"
+						id="movement_X"
+						min="-200"
+						max="200"
+						step="1"
+					/>
+				</div>
+				<div>
+					<label for="movement_Y">Перемещение по Y</label>
+					<input
+						type="range"
+						id="movement_Y"
+						min="-200"
+						max="200"
+						step="1"
+					/>
+				</div>
+				<div>
+					<label for="movement_Z">Перемещение по Z</label>
+					<input
+						type="range"
+						id="movement_Z"
+						min="-200"
+						max="200"
+						step="1"
+					/>
+				</div>
+			</div>
+			<div class="camera">
+				<div>
+					<label for="camera_X">Камера по X</label>
+					<input
+						type="range"
+						id="camera_X"
+						min="-240"
+						max="240"
+						step="1"
+					/>
+				</div>
+				<div>
+					<label for="camera_Y">Камера по Y</label>
+					<input
+						type="range"
+						id="camera_Y"
+						min="-240"
+						max="240"
+						step="1"
+					/>
+				</div>
+			</div>
+			<div class="axes">
+				<div>
+					<label for="axes_checkbox">Отображение осей</label>
+					<input type="checkbox" id="axes_checkbox" checked="true" />
+				</div>
+			</div>
+		</div>
+		<script src="./script.js"></script>
+	</body>
+</html>
