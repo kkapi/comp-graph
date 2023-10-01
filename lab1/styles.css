@@ -46,6 +46,12 @@ canvas {
     margin-left: 10px;
 }
 
-.coordinates div {
+.cords div {
     padding: 8px;
+}
+
+#figure-select {
+    width: 100px;
+    text-align: center;
+    margin-left: 5px;
 }
